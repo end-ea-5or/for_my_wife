@@ -205,9 +205,7 @@
 
 	function noop() {}
 
-	function preventDefault(e) {
-		e.preventDefault();
-	}
+	
 
 	function isIgnoreTag(e) {
 		return !!ignoreTags[e.target.tagName.toLowerCase()];
@@ -359,7 +357,6 @@
 			enableMove: function() {
 				this.moveEnabled = true;
 				this.enableMove = noop;
-				e.preventDefault();
 			}
 		};
 
@@ -410,7 +407,7 @@
 		if (!touch) { return; }
 
 		// Stop the interface from gesturing
-		e.preventDefault();
+		
 
 		event.targetTouches = e.targetTouches;
 		data.touch = touch;
