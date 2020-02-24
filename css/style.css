@@ -1,0 +1,17 @@
+.twentytwenty-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(26, 38, 90);
+    font-family: sans-serif;
+}
